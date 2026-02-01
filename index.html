@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="passwordScreen">
+    <h2>Enter the secret word 💖</h2>
+    <input type="password" id="passwordInput" placeholder="Type it here..." />
+    <button id="passwordBtn">Enter</button>
+    <p id="passwordMessage"></p>
+  </div>
+
+  <!-- MAIN WEBSITE CONTENT -->
+  <div id="mainContent" style="display:none;">
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Happy Valentine’s Day ❤️</h1>
+      <h2>Victoria</h2>
+      <p>This little website is my way of telling you how I feel.</p>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="letter">
+      <h3>From My Heart</h3>
+      <p id="typedText"></p>
+    </section>
+
+    <!-- Romantic Line Section -->
+    <section class="romantic-line">
+      <p id="romanticLine" class="hidden">I choose you. Today. Tomorrow. Always. ❤️</p>
+    </section>
+
+    <!-- Final Screen -->
+    <section class="final hidden" id="finalScreen">
+      <h1>I love you,</h1>
+      <h2>Victoria ❤️</h2> <!-- replace with her real name -->
+      <p>Today, tomorrow,<br />and for all the days that follow.</p>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
